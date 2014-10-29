@@ -25,13 +25,17 @@ Example
 ========
 var number = '1234567';
 var message = 'Hello World';
+
 function onSuccess(msg){
   console.log('Message Sent'+msg);
 }
+
 function onError(err){
   console.log('Error '+err);
 }
+
 $(document).ready(function(){
   window.SMS.send(number,message,onSuccess,onError);
 });
+
 
