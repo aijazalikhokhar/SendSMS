@@ -16,7 +16,7 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="SMS">
+            <feature name="SendSMS">
                 <param name="android-package" value="com.mexyon.sms.SendSMS"/>
             </feature>
         </config-file>
