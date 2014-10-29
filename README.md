@@ -12,9 +12,9 @@ Usage
 ========
 adding plugin to your project just call
 
-Cordova
+
 cordova plugin add http://www.github.com/aijazalikhokhar/SendSMS
-Phonegap
+
 phonegap local plugin add http://www.github.com/aijazalikhokhar/SendSMS
 
 In your javascript Device Ready method call
