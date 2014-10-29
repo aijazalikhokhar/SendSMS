@@ -7,7 +7,7 @@ import org.json.JSONException;
 import android.telephony.SmsManager;
 import android.widget.Toast;
 
-public class SendSMS1 extends CordovaPlugin {
+public class SendSMS extends CordovaPlugin {
     public static final String ACTION_SMS = "sendMessage";
     
     @Override
