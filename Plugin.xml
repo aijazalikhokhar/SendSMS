@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.mexyon.sms"
+      version="0.1.0">
+    <name>SMS Message</name>
+    <description>Sample PhoneGap SMS Plugin</description>
+    <license>AAK</license>
+    <keywords>phonegap,SMS</keywords>
+
+
+    <js-module src="www/sms.js" name="SMS">
+        <clobbers target="window.SMS" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SMS">
+                <param name="android-package" value="com.mexyon.sms.SendSMS"/>
+            </feature>
+        </config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.SEND_SMS" />
+		</config-file>
+        <source-file src="src/android/SendSMS.java" target-dir="src/com/mexyon/sms" />      
+     </platform>          
+</plugin>
